@@ -1,0 +1,13 @@
+.squares{
+	width: 100px;
+	height:100px;
+	border: 5px solid black;
+	float: left;
+}
+.red{
+	background: red;
+
+}
+.blue{
+	background: blue;
+}

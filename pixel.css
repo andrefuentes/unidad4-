@@ -1,0 +1,48 @@
+.imagen{
+		background:url(ima2.jpg);
+		height:560px;
+}
+.titulo{
+	font-family: Arial;
+	font-size: 15px;
+	float: left;
+	color: white;
+}
+.sub{
+	font-family: Arial;
+	font-size: 15px;
+	text-align: right;
+	color: white;
+}
+.start{
+	text-align: center;
+}
+.prim{
+	text-align:center;
+	font-size: 25px;
+	color: green;
+}
+.subti{
+	text-align: center;
+}
+.partd{
+	height: 500px;
+	width:100%;
+	font-size: 15px;
+
+}
+.imagen2{
+	background: url(imagen3.jpg);
+	height:100%;
+	width: 50%;
+	float: left;
+}
+.text{
+	height: 65%;
+	background-color:#5cac55;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+	padding-top: 200px
+}
+
