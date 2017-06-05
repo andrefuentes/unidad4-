@@ -1,12 +1,31 @@
-btncrear = document.getElementById("crear");		
-cantidad= document.getElementById("cantida");
-color = document.getElementById("colores");
+var inNumeroNuevo = document.getElementById("numeroNuevo");
+var botonIngresar = document.getElementById("ingresar");
+var parrafo = document.getElementById("parrafo");
+var listaNumeros = [];
+var botonHistograma = document.getElementById("histograma");
+var r = 0;
+var r1= 0;
+var  r2= 0;
 
-
-btncrear.onclick=function(){
-	for(var i=0; i<cantidad.value ;i++){
-		var cuadrado = document.createElement("div");
-		cuadrado.setAttribute("class","squares " + color.value);
-		document.getElementById("square").appendChild(cuadrado);
+botonIngresar.onclick = function() {
+	if (inNumeroNuevo.value <= 100 && inNumeroNuevo.value >=0) {
+		listaNumeros.push(inNumeroNuevo.value);
+		parrafo.innerHTML = listaNumeros;
 	}
+	else{
+		window.alert("Ingrese un numero de 0 a 100");
+	}
+	inNumeroNuevo.value = "";
 }
+
+inNumeroNuevo.onkeypress = function(f) {
+	if (f.which == 13) {
+		if (inNumeroNuevo.value <= 100 && inNumeroNuevo.value >=0) {
+			listaNumeros.push(inNumeroNuevo.value);
+			parrafo.innerHTML = listaNumeros;
+		}
+		else{
+			window.alert("Ingrese un numero de 0 a 100");
+		}
+		inNumeroNuevo.value = "";	
+	}
